@@ -1,0 +1,192 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+
+\title{Cloud Computing in Healthcare}								% Title
+\author{21111034}								% Author
+\date{14 Mar 2022}											% Date
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+	\centering
+    \vspace*{0.5 cm}
+    \includegraphics[scale = 0.20]{logo.jpeg}\\[1.0 cm]	% University Logo
+    \textsc{\LARGE  National Institute of Technology\newline\newline Raipur}\\[2.0 cm]	% University Name
+	\textsc{\Large Project Report on}\\[0.5 cm]				% Course Code
+	\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+	{ \huge \bfseries \thetitle}\\
+	\rule{\linewidth}{0.2 mm} \\[1.0 cm]
+	
+	\begin{minipage}{1.0\textwidth}
+			\begin{center} \large
+			\emph{Submitted By :} \\
+			Naveen Choudhary\\
+            21111034\\
+        First Semester\\
+        Biomedical Engineering\\
+		\end{center}
+        
+	\end{minipage}\\[2 cm]
+	
+
+\end{titlepage}
+
+\newpage
+\pagestyle{fancy}
+\begin{center}
+\textsc{\huge\underline{Acknowledgement}}   
+\end{center}
+
+\indent
+\large
+
+I would like to extend my sincere and heartfelt thanks to my teachers Dr Saurabh Gupta Sir, Dr Sumit Banchhor Sir, Dr Arindam Bit Sir, NeelamShobha Nirala Mam, who have helped me in this endeavour and has always been very cooperative, gave me valuable suggestions and guidelines during the completion of the project and without their help,  cooperation,  guidance the project report on the topic “Cloud Computing in Healthcare ”, could not have been what it evolved to be. 
+
+\indent
+
+\begin{flushright}
+Naveen Choudhary \\
+21111034 \\
+First Semester \\
+Biomedical Engineering \\
+National Institute of Technology, Raipur \\ 
+\end{flushright}
+
+\indent
+
+\begin{flushleft}
+Date of Submission : 07/04/2022
+\end{flushleft}
+
+\newpage
+\pagestyle{fancy}
+\begin{center}
+    \textsc{\huge\underline{Introduction}}
+\end{center}
+ 
+ \indent
+ 
+ 
+Cloud Computing is the delivering of services over the internet or the cloud. It means using remote servers to store and access data instead of relying on local hard drives and private data centers. Before the invention of cloud computing organizations had to have their own local server, which were very hard to maintain because of the space they require and amount of hardware they used. Operating such servers were very difficult task. Cloud computing made it easy to maintain the data as the organizations now no more needed large space for their servers, that means low cost on maintaining data. Also the risk of data loss was also reduced.
+
+\indent
+
+Implementing Cloud technology ion healthcare will increase the flexibility of healthcare sector. It will increase the data sharing as remote server are used via internet. The information regarding to some new disease, its symptoms, its cure could be available easily and calamities such as Covid-19 can be prevented.
+We can have a much advanced healthcare system with the help of cloud computing.
+
+\newpage
+
+\section{WHAT IS CLOUD COMPUTING?}
+
+Cloud computing describes the practice of implementing remote servers accessed via the internet to store, manage and process data. This is in contrast to establishing an on-site data center with servers, or hosting the data on a personal computer. Cloud computing allows you to store documents in a secure location that you can access from any device at any time. All of the programmes and software required to be installed on a computer or server that could only be accessed from a certain place at first. People may now use the internet to access their programmes and information thanks to the cloud. This technique can be used to data storage as well. Despite the fact that you may have folders full of vital work on your PCs and servers, the data can be stored remotely and backed up to the cloud.
+
+\subsection{CLOUD COMPUTING IN HEALTHCARE}
+
+Cloud storage is a customizable solution that enables healthcare practitioners and hospitals to utilise a network of remotely accessible servers to store massive amounts of data in a secure environment managed by IT specialists. The worldwide healthcare cloud computing industry is predicted to reach 35 billion dollars by 2022, according to BCC research, with an annualised growth rate of 11.6 percent. Despite this, according to a 2018 survey, 69 percent of respondents said their hospital did not have a plan in place to migrate existing data centres to the cloud.
+
+\section{IMPLEMENTATION OF CLOUD COMPUTING IN HEALTHCARE}
+
+Because of the enormous number of processes involved and the amount of private and sensitive information it must handle, the healthcare sector is complicated. The industry's complexity frequently results in two primary issues: increasing operational costs (including data storage costs) and the difficulties of establishing a self-sufficient health ecosystem. Technology has always been the saviour, providing a workaround for big issues in the healthcare industry. The cloud's on-demand computing capability offers value, particularly when healthcare institutions and providers need to deploy, access, and manage network information at a moment's notice. With the surge in need for data-based security, there needs to be a shift in how healthcare data is created, used, stored, collaborated, and shared. It's the place where cloud computing doesn't leave any stone untouched!
+
+\indent
+Some of the first stages of process, depending on the functionality, include gathering patient healthcare data. The sensor node on the patient's side is in charge of managing the patient's total data. This information includes the patient's heart rate, blood pressure, and other physiological information. The data is gathered by biometric equipment, which then communicates it to the wireless sensor node. As a result, utilising a sensor data dissemination method, data from a wireless sensor node is posted to the cloud.
+
+\indent
+From the standpoint of private and public cloud communication situations, the cloud services workflow is provided. The hardware and software components of the private cloud platform address all defined healthcare criteria. Authentication, authorisation, data durability, data integrity, and data secrecy are the key functionalities in this procedure.
+
+\indent
+
+The following steps of cloud-based architecture give a complete idea of the overall workflow process.
+
+\subsection{Patient requests authorization}
+External users such as patients and third parties such as insurance companies, pharmacies, research healthcare businesses, and drug makers are the only ones who use public cloud services. A patient is also expected to be a user who interacts with the outside world. So he logs in using (username and password) to request authorisation through public identity and access control cloud services.
+
+\subsection{Request is processed at Public cloud and forwarded to Private cloud network}
+The request for storage, access, or processing health data is processed at the public cloud level before being transferred to the private cloud's identity and access control service.
+
+\subsection{Request is either accepted or rejected}
+The request is routed to a healthcare private cloud application server if a private cloud server accepts it. If the request is declined, a notification message is delivered stating the reason for the refusal.
+
+\subsection{ Physician requests for authorization}
+The doctor is classified as an internal user. As a result, he signs into the private cloud services and submits an authorization request to identity and access control, including the user and password.
+
+\subsection{The physician’s request is processed to access the data from the cloud application server}
+Once the authentication is complete, the request is processed by private cloud services, and physicians can access the data via the public cloud application server.
+
+\subsection{A medical advice is directly sent to the patient}
+A physician can directly send the feedback in terms of medical advice or prescription to the patient.
+
+\indent
+
+
+\includegraphics[]{BME-tp-pic.png}
+
+\section{BENEFITS OF CLOUD COMPUTING IN HEALTHCARE}
+
+\subsection{Efficient Electronic Medical Record-Keeping}
+In the medical profession, cloud computing aims to improve the quality, safety, and efficiency of medical services, as well as better engage patients and their families, improve care coordination, and protect patient privacy and security. When it comes to health records, the majority of hospitals and healthcare facilities have abandoned paper record-keeping and are instead relying on cloud storage. Physicians, nurses, and other healthcare providers use electronic health records that are kept in the cloud and updated electronically.
+
+\subsection{Collaborative Patient Care}
+A patient's medical records were likely kept in different files at each doctor, specialist, or hospital they saw in the past. This made it impossible for doctors to work together on a patient's care. The widespread use of cloud storage in hospitals, particularly as it relates to electronic health records, makes it easier for doctors to share information, see the results of interactions between other physicians and the patient, and provide care that takes into account everything the patient has experienced with other doctors in the past.
+
+\subsection{Reduced Data Storage Cost}
+Setting up on-site storage necessitates an initial hardware expenditure, which includes hard drives for data storage and other IT infrastructure to keep that data secure and accessible at all times. Cloud-based healthcare solution providers manage the administration, development, and maintenance of cloud data storage services, allowing healthcare providers to cut their upfront expenditures and focus on what they do best: caring for patients.
+
+\subsection{Offers Superior Data Security}
+Previously, physicians who kept reams of patient records in filing cabinets were vulnerable to data theft or damage. Paper records are readily misplaced or stolen, and a flood, fire, or other natural calamity could completely wipe them out. Patient safety was jeopardised due to the absence of security surrounding these materials. Healthcare organisations can now outsource data storage and security to HIPAA-compliant cloud storage services thanks to the emergence of cloud technology. These services save patient EMR data in a secure and private manner, as required by law. The "cloud" has aided in ensuring that every healthcare provider has access to a data storage system that appropriately protects the sensitive information of their patients.
+
+\subsection{It paves the Way for Big Data Applications}
+In the past, doctors kept their patient records in paper files all around the world. In patient EMRs, there was always a huge amount of potentially useful data – data that could be used to predict when an epidemic might strike, to detect subtle correlations in patient illnesses that could reveal disease causes, or to figure out which treatment options were the most effective for a set of symptoms. All of the data that was previously inaccessible in filing cabinets can now be searched through and analysed using the most advanced computer algorithms available thanks to the emergence of cloud computing in hospitals and physician practises. This will allow healthcare providers to detect and respond to hitherto undetectable public health hazards.
+
+\subsection{It Offers Flexibility and Scales Easily}
+Beyond the immediate cost savings of using cloud storage rather than an in-house data storage solution, businesses will profit in the long run from easier upgrades and lower scaling expenses. Economies of scale are used by cloud storage providers for healthcare to lower data management expenses for its customers – hospitals and healthcare facilities.
+
+\subsection{It Enhances Patient Safety}
+Cloud-based EMRs have the potential to improve patient safety significantly. For example, over the course of a year, a mentally ill patient in California visited hundreds of hospital emergency rooms and walk-in clinics, each time submitting to testing and expecting to acquire medicine prescriptions. Healthcare providers at each facility the patient visited could gain direct visibility into interactions between the patient and physicians at other facilities thanks to the deployment of cloud EMR technology.
+
+\indent
+\begin{center}
+    \textsc{\huge\underline{Summary}}
+\end{center}
+
+\indent
+
+The introduction of cloud technology has eased off many conventional services in healthcare. It not only requires less expenses for implementation but is also very efficient. It provides better Data Sharing and Data Security. Many hospital and other healthcare service providers are now shifting to cloud technology for their data management. But still this technology has not been completely adapted, which will surely take some time. This technology can in making the healthcare system even better.
+
+\newpage
+\begin{center}
+    \textsc{\huge\underline{REFERENCES}}
+\end{center}
+
+\indent
+
+https://www.galendata.com/ \\
+https://www.leewayhertz.com/ \\
+https://en.wikipedia.org/  \\
+https://builtin.com/cloud-computing/ \\
+
+\end{document}
